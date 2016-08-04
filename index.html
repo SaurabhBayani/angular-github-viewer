@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="GitHubViewer">
 	<head>
 		<title>Github Viewer</title>
 		<link rel="stylesheet" href="assets/css/bootstrap.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
+		<header class="gv-header">
+			Git Hub Viewer
+		</header>
+	
+		<div class="container gv-main-div" ng-controller="MainController">
+			<h3>{{message}}</h3>
+		</div>
+
+		<footer class="gv-footer">Saurabh Bayani</footer>
+
 		<script src="assets/js/angular.js"></script>
 		<script src="app.js"></script>
 	</body>
