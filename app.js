@@ -1,7 +1,13 @@
 (function(){
-	var MainController = function($scope) {
-		$scope.message = 'Hello World';
+	var MainController = function($scope, UtilService) {
+		UtilService.doAjax();
 	}
+
+
+
+
+
+
 	angular.module('GitHubViewer', [])
-		.controller('MainController', ['$scope', MainController]);
+		.controller('MainController', ['$scope', 'UtilService',MainController]);
 }());
